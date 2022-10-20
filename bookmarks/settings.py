@@ -59,7 +59,11 @@ ROOT_URLCONF = 'bookmarks.urls'
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'accounts.authentication.EmailAuthBackend',
+    'social_core.backends.google.GoogleOAuth2',
 ]
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '668184554623-e4sdp25r0kpn4igf603hoior2o9903as.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
 
 TEMPLATES = [
     {
