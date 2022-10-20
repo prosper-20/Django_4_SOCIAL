@@ -18,5 +18,5 @@ class EmailAuthBackend:
         except User.DoesNotExist:
             return None
 
-    def create_profile(backend, user, *args, **kwargs):
-        Profile.objects.get_or_create(user=user)
+def create_profile(backend, user, *args, **kwargs):
+    Profile.objects.get_or_create(user=user)
