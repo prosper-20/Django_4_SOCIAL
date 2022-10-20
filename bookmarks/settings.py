@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'crispy_forms',
     'social_django',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
