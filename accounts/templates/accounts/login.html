@@ -7,5 +7,10 @@
 {{ form.as_p }}
 {% csrf_token %}
 <p><input type="submit" value="Log in"></p>
+<li class="google">
+    <a href="{% url 'social:begin' 'google-oauth2' %}">
+    Sign in with Google
+    </a>
+</li>
 </form>
 {% endblock %}

@@ -16,6 +16,11 @@ Please try again.
 {% csrf_token %}
 <input type="hidden" name="next" value="{{ next }}" />
 <p><input type="submit" value="Log-in"></p>
+<li class="google">
+    <a href="{% url 'social:begin' 'google-oauth2' %}">
+    Sign in with Google
+    </a>
+</li>
 </form>
 <p>
 <a href="{% url 'password_reset' %}">
